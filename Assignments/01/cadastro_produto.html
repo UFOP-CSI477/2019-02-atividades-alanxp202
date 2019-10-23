@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadastrar Produto</title>
+</head>
+
+<body>
+  <form>
+    <h1>Cadastrar Produto</h1>
+
+    <p>Nome:</p>
+    <input type="text">
+    <p>Peso:</p>
+    <input type="text">
+    <p>Unidade de Medida:</p>
+    <input type="text">
+    <p>Valor:</p>
+    <input type="text">
+    <p>Estoque inicial:</p>
+    <input type="text">
+    <p>Mercado:</p>
+    <input type="radio" name="mercado" value="interno" checked> Interno<br>
+    <input type="radio" name="mercado" value="externo"> Externo<br>
+    <p>Fornecedor:</p>
+    <select name="fornecedor">
+      <option value="-1">Selecione</option disabled>
+      <option value="audi">Audi</option>
+      <option value="saab">Chevrolet</option>
+      <option value="fiat">Fiat</option>
+      <option value="renault">Renault</option>
+    </select>
+    <p></p>
+    <input type="reset">
+    <input type="button" value="Voltar" onclick="javascript:history.back()">
+    <input type="button" value="Enviar">
+
+  </form>
+</body>
+
+</html>

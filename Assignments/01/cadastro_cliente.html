@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadastrar Cliente</title>
+</head>
+
+<body>
+  <h1>Cadastrar Cliente</h1>
+  <form>
+    <p>Nome:</p>
+    <input id="name" type="text">
+
+    <p>Data de nascimento:</p>
+    <input id="birthday" type="date" name="aniversario">
+
+    <p>CPF:</p>
+    <input type="text" placeholder="000.000.000-00">
+
+    <p>Sexo:</p>
+    <input id="male" type="radio" name="genero" value="M" checked> Masculino<br>
+    <input id="female" type="radio" name="genero" value="F"> Feminino<br>
+    <input id="other" type="radio" name="genero" value="NB"> Não Binário
+
+    <p>Email:</p>
+    <input id="email" type="email" name="email" placeholder="exemplo@email.com">
+
+    <p>Senha:</p>
+    <input id="senha" type="password" name="senha">
+
+    <p>Repita a Senha:</p>
+    <input id="resenha" type="password" name="resenha">
+    <p></p>
+    <input type="reset">
+    <input type="button" value="Voltar" onclick="javascript:history.back()">
+    <input type="button" value="Enviar">
+
+  </form>
+</body>
+
+</html>
