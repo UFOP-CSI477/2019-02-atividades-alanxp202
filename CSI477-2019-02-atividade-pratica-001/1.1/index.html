@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Corrida de Carrinhos de Rolimã</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="codigo-corrida.js"></script>
+</head>
+
+<body>
+    <h1>Corrida de carrinhos de Rolimã</h1>
+    
+    <form name="entrada" method="post" onsubmit=" return adicionar('bodyTable')">
+        <div id="nome" class="form-group">
+            <p>Nome do(a) participante:</p>
+            <input name="infoNome" type="text">
+            <div id="alertNome" class="alert alert-danger" style="display: none">Preencha o campo Nome!</div>
+        </div>
+        <div id="tempo" class="form-group">
+            <p>Tempo do(a) participante: </p>
+            <input name="infoTempo" type="text">
+            <div id="alertTempo" class="alert alert-danger" style="display: none">Preencha o campo Tempo!</div>
+        </div>
+        
+        <br>
+
+        <input type="reset" class="btn btn-danger">
+        <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
+        <input type="submit" value="Adicionar" class="btn btn-primary">
+        
+    </form>
+    <br>
+    <table class="table table-hover">
+        <thead id="headTable" class="thead-dark">
+            <tr>
+                <th></th>
+                <th>Largada</th>
+                <th>Nome do(a) Participante</th>
+                <th>Tempo(s)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="bodyTable">
+            <tr id="row0">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row1">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row2">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row3">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row4">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row5">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
