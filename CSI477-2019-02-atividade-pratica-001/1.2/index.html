@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <title>Calculo de IMC</title>
@@ -7,29 +8,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="codigo-imc.js"></script>
 </head>
+
 <body>
-    
-    <h1>Cálculo de IMC</h1>
-    <form id="dados">
-        <p>Digite sua altura:</p>
-        <input id="infoAlt" type="text">
-        <p>Digite o seu peso:</p>
-        <input id="infoPeso" type="text">
-        <br><br>
-        <input type="reset" class="btn btn-danger">
-        <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
-        <input type="button" value="Adicionar" class="btn btn-primary" onclick="calcular()">
+    <div class="jumbotron" style="text-align: center;">
+        <h1>Cálculo de IMC</h1>
+    </div>
+    <div class="container">
+        <form name="dados">
+            <p>Digite sua altura:</p>
+            <input id="infoAlt" type="text" placeholder="em metros">
+            <p>Digite o seu peso:</p>
+            <input id="infoPeso" type="text" placeholder="em quilos">
+            <br><br>
+            <input type="reset" class="btn btn-danger">
+            <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
+            <input type="button" value="Calcular" class="btn btn-primary" onclick="calcular()">
 
-        <br>
-        <h2>Diagnóstico:</h2>
-    
-        <p>Peso Ideal:</p>
-        <input id="pesoIdeal" type="text" disabled>
-        <p>Situação:</p>
-        <input id="situacao" type="text" disabled>
-        <p>IMC:</p>
-        <input id="imc" type="text" disabled>
-    </form>
+            <br><br>
+            <h2>Diagnóstico:</h2>
 
+            <p>Peso Ideal:</p>
+            <input id="pesoIdeal" type="text" disabled>
+            <p>Situação:</p>
+            <input id="situacao" type="text" disabled>
+            <p>IMC:</p>
+            <input id="imc" type="text" disabled>
+        </form>
+    </div>
 </body>
+
 </html>
