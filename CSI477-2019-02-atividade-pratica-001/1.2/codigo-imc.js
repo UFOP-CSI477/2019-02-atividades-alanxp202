@@ -31,3 +31,11 @@ function calcular() {
     }
 
 }
+
+function trocar() {
+    let palavra = document.dados.infoAlt.value;
+
+    palavra = palavra.replace(/,/g, ".");
+    console.log(palavra);
+    document.dados.infoAlt.value = palavra;
+}

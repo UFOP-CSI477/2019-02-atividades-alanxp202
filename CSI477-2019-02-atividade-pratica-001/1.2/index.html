@@ -16,9 +16,9 @@
     <div class="container">
         <form name="dados">
             <p>Digite sua altura:</p>
-            <input id="infoAlt" type="text" placeholder="em metros">
+            <input id="infoAlt" type="text" placeholder="em metros" onfocusout="trocar(infoAlt)">
             <p>Digite o seu peso:</p>
-            <input id="infoPeso" type="text" placeholder="em quilos">
+            <input id="infoPeso" type="text" placeholder="em quilos" onfocusout="trocar(infoPeso)">
             <br><br>
             <input type="reset" class="btn btn-danger">
             <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
