@@ -11,30 +11,32 @@
 </head>
 
 <body>
-    <h1>Corrida de carrinhos de Rolimã</h1>
-    
-    <form name="entrada" method="post" onsubmit=" return adicionar('bodyTable')">
-        <div id="nome" class="form-group">
-            <p>Nome do(a) participante:</p>
-            <input name="infoNome" type="text">
-            <div id="alertNome" class="alert alert-danger" style="display: none">Preencha o campo Nome!</div>
-        </div>
-        <div id="tempo" class="form-group">
-            <p>Tempo do(a) participante: </p>
-            <input name="infoTempo" type="text">
-            <div id="alertTempo" class="alert alert-danger" style="display: none">Preencha o campo Tempo!</div>
-        </div>
-        
-        <br>
+    <div class="jumbotron" style="text-align: center">
+        <h1>Corrida de carrinhos de Rolimã</h1>
+    </div>
+    <div class="container">
+        <form name="entrada" method="post">
 
-        <input type="reset" class="btn btn-danger">
-        <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
-        <input type="submit" value="Adicionar" class="btn btn-primary">
-        
-    </form>
+            <p>Posição de Lagarda:</p>
+            <input id="infoLargada" type="text" placeholder="De 1 a 6 sem repetir" onfocus="limpar(infoLargada)">
+
+            <p>Nome do(a) participante:</p>
+            <input id="infoNome" type="text" placeholder="Nome do competidor" onfocus="limpar(infoNome)">
+
+            <p>Tempo do(a) participante: </p>
+            <input id="infoTempo" type="text" placeholder="Em segundos" onfocus="limpar(infoTempo)">
+
+            <br><br>
+
+            <input type="reset" class="btn btn-danger">
+            <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
+            <input type="button" value="Adicionar" class="btn btn-primary" onclick="adicionar()">
+            <input type="button" value=" Apurar" class="btn btn-warning" onclick="apurar()">
+        </form>
+    </div>
     <br>
-    <table class="table table-hover">
-        <thead id="headTable" class="thead-dark">
+    <table id="tabela" class="table table-hover">
+        <thead class="thead-dark">
             <tr>
                 <th></th>
                 <th>Largada</th>
@@ -43,45 +45,45 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody id="bodyTable">
-            <tr id="row0">
+        <tbody>
+            <tr>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="row1">
-                <td></td>
-                <td></td>
+                <td>1</td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr id="row2">
+            <tr>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr id="row3">
-                <td></td>
-                <td></td>
+                <td>2</td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr id="row4">
+            <tr>
                 <td></td>
-                <td></td>
+                <td>3</td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
-            <tr id="row5">
+            <tr>
+                <td></td>
+                <td>4</td>
                 <td></td>
                 <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>6</td>
                 <td></td>
                 <td></td>
                 <td></td>
