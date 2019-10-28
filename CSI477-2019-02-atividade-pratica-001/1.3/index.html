@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Escala Richter</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='codigo-escala-richter.js'></script>
+</head>
+
+<body>
+    <div class="jumbotron" style="text-align: center">
+        <h1>Escala Richter</h1>
+    </div>
+
+    <div class="container">
+        <form name="dados">
+            <p>Amplitude:</p>
+            <input id="infoAmpl" type="text" placeholder="Em milímetros">
+            <p>Variação de Tempo:</p>
+            <input id="infoTempo" type="text" placeholder="Tempo final - inicial">
+            <div class="alert alert-primary" role="alert">
+                Como o papel de um sismógrafo "anda" a 1mm/s, Então cada 1mm = 1s.
+            </div>
+
+            <input type="reset" class="btn btn-danger">
+            <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary">
+            <input type="button" value="Calcular" class="btn btn-primary" onclick="calcular()">
+
+            <p style="color: #dddddd;">________________________________</p>
+
+            <p>Magnetude:</p>
+            <input id="magnetude" type="text" disabled>
+            <p>Efeitos:</p>
+            <textarea id="efeitos" rows="4" cols="50" class="form-control alert alert-success" disabled></textarea>
+        </form>
+    </div>
+
+</body>
+
+</html>
