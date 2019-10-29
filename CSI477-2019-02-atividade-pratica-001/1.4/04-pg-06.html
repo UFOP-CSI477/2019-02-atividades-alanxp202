@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Atividade Didática para Crianças</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src='codigo-didatica.js'></script>
+</head>
+
+<body>
+    <div class="jumbotron" style="text-align: center">
+        <h1>Atividade Didática para Crianças</h1>
+    </div>
+    <div style="text-align: center">
+        <img style="width:150px;height:150px;" src="img/control.png">
+    </div>
+    <form name="dados" action="04-pg-01.html">
+        <div class="container">
+            <h2>2)Relacione o nome com a figura gemométrica:</h2>
+            <br>
+            <div class="container">
+                <img style="width:50px;height:50px;" src="img/opt2.png">
+                <input id="errada" type="radio" name="comida" checked><span style="font-size: 20px"> Lozango</span><br>
+                <img style="width:50px;height:50px;" src="img/opt1.png">
+                <input id="errada" type="radio" name="comida"><span style="font-size: 20px"> Quadrado</span><br>
+                <img style="width:50px;height:50px;" src="img/opt3.png">
+                <input id="errada" type="radio" name="comida"><span style="font-size: 20px"> Triangulo</span><br>
+                <img style="width:50px;height:50px;" src="img/opt6.png">
+                <input id="correta" type="radio" name="comida"><span style="font-size: 20px"> Trapézio</span>
+            </div>
+            <br>
+            <div id="sucesso" class="alert alert-success" role="alert" style="font-size: 20px; display: none;">
+                Correto!
+            </div>
+            <div id="fracasso" class="alert alert-danger" role="alert" style="font-size: 20px; display: none;">
+                Incorreto!
+            </div>
+            <br>
+            <button id="botao" type="button" class="btn btn-success btn-lg btn-block" onclick="corrigir()">Corrigir!</button>
+            <input type="button" onclick="javascript:history.back()" value="Voltar" class="btn btn-outline-primary btn-lg btn-block">
+            <button id="proximo" type="submit" class="btn btn-primary btn-lg btn-block" style="visibility: hidden" onclick="corrigir()">Proximo!</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
