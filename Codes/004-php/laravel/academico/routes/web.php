@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/welcome', function () {
-    //return view('welcome');
-    return "Olá mundo!";
-});
+Route::get('/welcome', 'PaginasController@welcome');
 
-Route::get('/listar', function() {
-    $lista = ['Ana', 'Bruna', 'Hugo', 'João', 'Pedro'];
-    return $lista;
-});
+Route::get('/', 'PaginasController@index');
+
+Route::get('/listar', 'PaginasController@listar');
