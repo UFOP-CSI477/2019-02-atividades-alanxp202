@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'PrincipalController@index');
+
+Route::get('/contato', function(){
+    return "Contato";
 });
