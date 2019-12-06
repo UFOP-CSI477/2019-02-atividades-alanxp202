@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PrincipalController@index');
+Route::get('/', 'IndexController@index');
 
 Route::get('/contato', function(){
     return "Contato";
